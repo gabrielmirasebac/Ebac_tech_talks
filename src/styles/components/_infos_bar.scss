@@ -1,6 +1,8 @@
+@use '../variables';
+
 .infos-bar{
     padding: 16px 24px;
-    background-color: white;
+    background-color: variables.$textcolor;
     display: flex;
     justify-content: space-between;//para que os itens sejam distribuidos nos extremos
 
@@ -10,10 +12,10 @@
 
         &__item{
             font-size: 14px;
-            color: #000;
+            color: variables.$secundaryTextColor;
 
             b{
-                color: #000;
+                color: variables.$secundaryTextColor;
                 font-size: 18px;
                 display: block; //quebrar a linha, pois a tag b tem por padrao display inline
             }
